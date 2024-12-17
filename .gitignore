@@ -1,0 +1,33 @@
+# Build-Verzeichnisse
+/build/
+build/
+
+# CMake-Dateien
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+
+# Compiler-Ausgabe
+*.o
+*.obj
+*.a
+*.so
+*.exe
+*.out
+*.log
+
+# Editor-spezifische Dateien
+.vscode/
+.idea/
+*.swp
+*~
+
+# System-Dateien
+.DS_Store
+Thumbs.db
+
+# Test-Ausgaben
+Testing/
+test_output.log
