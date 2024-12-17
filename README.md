@@ -1,0 +1,1 @@
+# CMake_install-static-library
