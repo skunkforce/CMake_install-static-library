@@ -149,17 +149,15 @@ int main() {
 Erstelle ein Build-Verzeichnis und führe CMake aus, um das Projekt zu bauen:
 
 ```bash
-mkdir build
-cd build
-cmake ..
-cmake --build .
+cmake -B build
+cmake --build build/
 ```
 
 ### 2. **Tests ausführen**
 Führe die Tests aus, um die Bibliothek zu überprüfen:
 
 ```bash
-ctest
+ctest --test-dir build/
 ```
 
 **Erwartete Ausgabe:**
@@ -172,7 +170,7 @@ Test passed: sayHello() works correctly.
 Installiere die Bibliothek und die Header-Dateien in die Standardverzeichnisse:
 
 ```bash
-sudo cmake --install .
+sudo cmake --install build/
 ```
 
 - Die statische Bibliothek wird nach `/usr/local/lib/libStaticLib.a` installiert.
@@ -187,10 +185,7 @@ Wechsle in das `example`-Verzeichnis und baue das Projekt:
 
 ```bash
 cd ../example
-mkdir build
-cd build
-cmake ..
-cmake --build .
+cmake -B build && cmake --build build/
 ```
 
 ### 2. **Beispiel ausführen**

@@ -7,3 +7,4 @@ int main() {
     lib.sayHello();
     std::cout << "Test passed: sayHello() works correctly." << std::endl;
     return 0;
+}
